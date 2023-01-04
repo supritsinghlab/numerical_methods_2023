@@ -7,4 +7,8 @@ Repository for Class Materials, Codes and Relevant course materials for my cours
 
 Course Instructor: [Suprit Singh](https://supritsinghlab.github.io)
 
-Course objectives, outline, and logistics will be added shortly.
+Venue: Block 4 Lecture Theatre 2
+
+Timings: Slot H; MW 11:00-12:00 ,Th 12:00-13:00 
+
+Course objectives, outline, and logistics will be added iteratively. Keep an eye out for rolling updates!
