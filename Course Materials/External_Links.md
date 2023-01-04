@@ -2,7 +2,7 @@
 
 1. [Linux Commands ](https://www.youtube.com/watch?v=ZtqBQ68cfJc)
 2. [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet)
-3. [LaTeX in Markdown](https://www.fabriziomusacchio.com/blog/2021-08-10-How_to_use_LaTeX_in_Markdown/)\
+3. [LaTeX in Markdown](https://www.fabriziomusacchio.com/blog/2021-08-10-How_to_use_LaTeX_in_Markdown/)
 4. [Julia](https://julialang.org)
 5. [A Julia Tutorial for Physicists](https://rogerluo.dev/TutorialForPhysicists.jl/latest/)
 6. [Julia's Physics Ecosystem](https://juliaphysics.github.io/latest/ecosystem/)
