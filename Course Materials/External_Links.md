@@ -9,4 +9,5 @@
 7. [JuliaBerry](https://juliaberry.github.io)
 8. [VSCode](https://code.visualstudio.com)
 9. [VSCode on PI](https://www.youtube.com/watch?v=11YfaGi0Fpk&list=PLRiHAWwt3g5Nz9Vv0Nd6VbSsiPfQccOPA&index=10)
+10. [Working with CSV Files](https://bconnelly.net/posts/working_with_csvs_on_the_command_line/)
 
