@@ -67,9 +67,6 @@ Q4. Here is an exercise that employs Linux command-line tools to work with a CSV
 10.  Use the command **rm data.csv** to remove the CSV file when you're done working with it
 
 This exercise shows how to create a file using **touch**, populate data inside a file using **echo** and **&&** operator, how to view the contents of a file using **cat**, how to extract a specific column of the CSV file using **cut**, how to find specific rows using **grep**, how to extract specific fields of the CSV file based on certain conditions using **awk**, and how to sort the contents of a CSV file using **sort** command, it uses -t option to specify delimiter, -k option to specify field and -n option to sort numerically.
-
-  
-
   
 
 Q5. Here is an exercise that employs the Linux command **diff**:
@@ -105,5 +102,15 @@ Q6. Here is an exercise that employs Linux command-line tools to rename a bunch 
 8.   Use the command **rm file{1..5}\_new.txt** to delete the files with new names
 
 This exercise shows how to create multiple files with similar naming pattern using **touch** command and **{}**, then it uses a **for loop** with **mv** command to rename them in serial order, where the **for** loop iterates through a range of numbers, and the **mv** command renames the files with a new prefix at each iteration. This is a powerful command to rename a bunch of files in a directory by providing a simple numbering or iterating through a pattern that you want to use for your files.
+
+
+Q7. Write a Julia Snippet which includes a user defined function, call it "initial_data.jl" to define a function on a domain $$x\in[-10,10]$$ and generates a plot of the same.
+
+Q8. Write a Julia Snippet which takes the function defined in the "initial_data.jl" and integrates it on the domain $$x\in[-10,10]$$.
+
+Q9. Write a Julia Snippet to generate a table giving co-efficients of the second derivative expansion in terms of the discretized function elements.
+
+
+
 
 
