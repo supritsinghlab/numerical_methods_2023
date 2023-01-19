@@ -1,9 +1,4 @@
-using Plots
-
 function myFunction(x)
    return sin.(x)
+   # include your function here.
 end
-
-x = range(-10,10,length=100)
-y = myFunction(x)
-plot(x,y)
