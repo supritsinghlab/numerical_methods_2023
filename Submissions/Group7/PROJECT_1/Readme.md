@@ -2,6 +2,8 @@ GROUP 7
 Pawan Goswami   2019PH10645 
 Shubham Basera  2021PHS7223
 
+----------------------------------------------------------------------------------------------
+
 This repository contains Julia code file for accomplishing several tasks as part of Project_1 :  
 
 A generic function for normalizing wavefuncion that uses Simpson 1/3 method
