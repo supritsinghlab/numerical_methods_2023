@@ -1,4 +1,13 @@
 # Project 1
+* final_project.jl --- main program for time evolution of free particle
+
+* Harmonic.jl --- it is program to calculate time evolution of coherent state in Harmonic potential
+
+* coefficients.jl --- program to compute coefficients
+* integrate.jl --- this program defines \, plot and integrate a function
+
+
+
 Our aim is to develop program to calculate time evolution of a wavefunction . We have to use pade approximation of exponential to approximate time evolution operator.
 
 Before that, we have to setup the environment. 
@@ -10,6 +19,8 @@ We have installed and the following in Ubuntu 20.04
 
 ---
 ## Start of the project
+
+
 
 We wish to make some special arguments before starting. Sampling of wavefunction must be within some limits as governed by **sampling theorem**. 
 
