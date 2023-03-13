@@ -2,7 +2,9 @@
 
 From DM and redshift data, we calculated hubble constant as h= 62.69 with uncertainity of 8.1.
 
-First_part.jl --- This code calculates the value of Hubble constant and its distribution using data of FRB given in publication. In data, data is calculated using gold standard. 
+First_part.jl --- This code calculates the value of Hubble constant and its distribution using data of FRB given in publication. In data, data is calculated using gold standard.
+
+main_algorith.jl --- This code calculates the value of correct Hubble constant and its distribution using data of FRB given in publication. In data, data is calculated using gold standard
 
 Monte_carlo_marginilzation.py --- this is python code for calculating likelohood of paramteres to get optimised value and check for their likelihood to agree with mock data generated based on certainm parameters.
 
