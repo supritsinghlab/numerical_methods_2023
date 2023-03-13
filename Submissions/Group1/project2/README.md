@@ -1,6 +1,6 @@
 # Calculating Hubble Constant
 
-From DM and redshift data, we calculated hubble constant as h= 66.26 with uncertainity of 9.18.
+From DM and redshift data, we calculated hubble constant as h= 62.69 with uncertainity of 8.1.
 
 First_part.jl --- This code calculates the value of Hubble constant and its distribution using data of FRB given in publication. In data, data is calculated using gold standard. 
 
