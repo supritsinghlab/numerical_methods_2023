@@ -73,21 +73,26 @@ end
 
 function main()
 dh=0.001
-h=0:dh:1
+h=0:dh:2
 
-Z=[0.0337,0.1178,0.19273,0.291,0.3214,0.378,0.4755,0.522,0.66]
-DM=[348.8,338.7,558.3,363.6,361.4,321.4,504.3,593.1,760.8]
-MWDM=[199,37.2,188,57.3,40.5,57.8,102,56.4,37]
+#Z=[0.0337,0.1178,0.19273,0.291,0.3214,0.378,0.4755,0.522,0.66]
+#DM=[348.8,338.7,558.3,363.6,361.4,321.4,504.3,593.1,760.8]
+#MWDM=[199,37.2,188,57.3,40.5,57.8,102,56.4,37]
+
+Z=[0.19273,0.291,0.3214,0.4755,0.522,0.66]
+DM=[558.3,363.6,361.4,504.3,593.1,760.8]
+MWDM=[188,57.3,40.5,102,56.4,37]
+
 
 LIKELI=ones(length(h))
 
 p=plot() #empty plot object
 
-for i=1:9
+for i=1:6
 z=Z[i]
 lss(h)=DM_LSS(h,z)
 tot=DM[i]
-mw=MWDM[i]
+mw=MWDM[i]/(1+z)
 
 host=100/(1+z) #mean value
 #println("tot:",tot," mw:",mw," host: ",host)
@@ -104,7 +109,7 @@ l=@. L(h)
 plot!(p,h,l/area(l,dh),label=string(z))
 LIKELI=LIKELI.* @. L(h)
 end
-plot!(p,h,LIKELI/area(LIKELI,dh),linewidth=4,label="joint")
+plot!(p,h,LIKELI/area(LIKELI,dh),linewidth=4,label="joint",xlim=(0,2))
 
 display(p)
 #mean=sum(h.*LIKELI/area(LIKELI,dh))/length(h)
