@@ -3,8 +3,8 @@ using Plots
 using Tensorial
 
 #defing parameters
-g1 = 1.5
-g2=1.5
+g1 = 0.1
+g2=0.1
 lambda=2
 ws=2
 
@@ -25,7 +25,7 @@ x_0= 0.1
 p_0=0
 
 #Steps
-N= 1000000
+N= 2000000
 
 #dt
 dt=0.0001
@@ -42,7 +42,7 @@ p[1]= p_0
 Entrop=zeros(Int(N/Nd))
 Energy_o = zeros(Int(N/Nd))
 Ess = zeros(Int(N/Nd))
-            
+SS= zeros((Int(N/Nd),4))
 #defining hamiltonion
 
 function H(x,p)
@@ -88,6 +88,7 @@ for i in collect(1:1:N-1)
         Energy_o[Int((i-1)/Nd)+1]=0.5*p[i]^2 + 0.5*x[i]^2
         Ess[Int((i-1)/Nd)+1]=real(Spin_state'*B*Spin_state)
         Entrop[Int((i-1)/Nd)+1]=Entropy(Spin_state)
+        SS[Int((i-1)/Nd)+1,:]=abs.(Spin_state')
 
     end
     
@@ -95,8 +96,11 @@ end
 
 
 plot_array = [] 
-push!(plot_array,plot(xf,pf, ms=1,ylabel="p",xlabel="x",legend=false))
-push!(plot_array,plot(dt*Nd*collect(1:1:N/Nd),Entrop, ms=1,legend=false,ylims=(0,0.7),ylabel="Entropy",xlabel="time"))
-push!(plot_array,plot(dt*Nd*collect(1:1:N/Nd),Ess, ms=1,legend=false,ylabel="Ess",xlabel="time"))
-push!(plot_array,plot(dt*Nd*collect(1:1:N/Nd),Energy_o,legend=false, ms=1,ylabel="Eo",xlabel="time"))
+push!(plot_array,plot(xf,pf, ms=1,ylabel="p",xlabel="x",legend=false,plot_color="black"))
+push!(plot_array,plot(dt*Nd*collect(1:1:N/Nd),Entrop, ms=1,legend=false,ylims=(0,0.7),ylabel="Entropy",xlabel="time",plot_color="black"))
+push!(plot_array,plot(dt*Nd*collect(1:1:N/Nd),Ess, ms=1,legend=false,ylabel="Ess",xlabel="time",plot_color="black"))
+push!(plot_array,plot(dt*Nd*collect(1:1:N/Nd),Energy_o,legend=false, ms=1,ylabel="Eo",xlabel="time",plot_color="black"))
+push!(plot_array,plot(dt*Nd*collect(1:1:N/Nd),SS, ms=1,ylabel="Spin state",xlabel="time",plot_color="black"))
 plot(plot_array...) # note the "..."
+
+plot(dt*Nd*collect(1:1:N/Nd),SS, ms=1,ylabel="Spin state",xlabel="time",plot_color="black")
