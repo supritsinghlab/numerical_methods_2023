@@ -11,3 +11,4 @@
 9. [VSCode](https://code.visualstudio.com)
 10. [VSCode on PI](https://www.youtube.com/watch?v=11YfaGi0Fpk&list=PLRiHAWwt3g5Nz9Vv0Nd6VbSsiPfQccOPA&index=10)
 11. [Working with CSV Files](https://bconnelly.net/posts/working_with_csvs_on_the_command_line/)
+12. [MCMC Methods](https://arxiv.org/abs/1706.01629)
